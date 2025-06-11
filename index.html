@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +11,17 @@
         <h1>Tela de Login</h1>
     </header>
     <main>
-        <form id="login">
+        <form id="login" method="post">
             <label for="email">E-mail</label>
-            <input type="email" name="email" placeholder="Digite seu email">
+            <input type="email" name="email" placeholder="Digite seu email" required>
+            
             <label for="senha">Senha</label>
-            <input type="password" name="senha" placeholder="Digite sua senha">
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+            
             <button type="submit">Entrar</button>
         </form>
     </main>
+    <script src="index.js"></script> 
     <footer>
         <h2>By Instrutor</h2>
     </footer>
-</body>
-</html>
