@@ -22,8 +22,8 @@ fetch('http://localhost:3000/posts', options)
   .then(response => {
     const main = document.querySelector('main');
     response.forEach(post => {
-      const authorName = post.author?.name || 'Autor desconhecido';
-      const authorAvatar = post.author?.avatar || 'https://via.placeholder.com/50'; 
+      const authorName = post.author?.name 
+      const authorAvatar = post.author?.avatar 
 
       const card = document.createElement('div');
       card.className = 'card';
@@ -33,8 +33,11 @@ fetch('http://localhost:3000/posts', options)
         <p><strong>Autor:</strong> ${authorName}</p>
         <img src="${authorAvatar}" alt="Avatar de ${authorName}" />
       `;
-      main.appendChild(card);
     });
+
+
+
+
   })
   .catch(err => console.error(err));
 
